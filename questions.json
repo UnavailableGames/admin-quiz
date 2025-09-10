@@ -6,7 +6,8 @@
         { "text": "Rätt", "correct": true },
         { "text": "Fel", "correct": false }
       ],
-      "feedback": "Bra! Alltid börja med en lugn varning."
+      "feedbackCorrect": "✅ Rätt: Man börjar med en lugn varning innan hårdare åtgärder.",
+      "feedbackWrong": "❌ Fel: Du bör alltid börja med en varning istället för att direkt straffa."
     },
     {
       "question": "Du bannar en medlem direkt för att du blev personligt arg.",
@@ -14,7 +15,8 @@
         { "text": "Rätt", "correct": false },
         { "text": "Fel", "correct": true }
       ],
-      "feedback": "Man ska aldrig banna p.g.a. känslor. Följ rutinerna."
+      "feedbackCorrect": "✅ Rätt: Man ska aldrig banna på grund av känslor, alltid följa rutiner.",
+      "feedbackWrong": "❌ Fel: Det är inte okej att banna någon för att man själv är arg."
     },
     {
       "question": "Två medlemmar bråkar. Du hoppar in och börjar argumentera på ena sidan.",
@@ -22,7 +24,8 @@
         { "text": "Rätt", "correct": false },
         { "text": "Fel", "correct": true }
       ],
-      "feedback": "Som admin ska du medla, inte ta parti."
+      "feedbackCorrect": "✅ Rätt: En admin ska vara neutral och medla, inte ta parti.",
+      "feedbackWrong": "❌ Fel: Att ta sida i ett bråk förvärrar situationen."
     },
     {
       "question": "En ny medlem postar reklam. Du tar bort länken och hänvisar till reglerna.",
@@ -30,7 +33,26 @@
         { "text": "Rätt", "correct": true },
         { "text": "Fel", "correct": false }
       ],
-      "feedback": "Korrekt! Alltid förklara varför något tas bort."
+      "feedbackCorrect": "✅ Rätt: Ta bort länken och förklara varför så medlemmen lär sig.",
+      "feedbackWrong": "❌ Fel: Att låta reklam ligga kvar skadar servern och reglerna måste följas."
+    },
+    {
+      "question": "En medlem frågar en enkel fråga i fel kanal. Du flyttar tråden eller påminner om rätt kanal på ett trevligt sätt.",
+      "options": [
+        { "text": "Rätt", "correct": true },
+        { "text": "Fel", "correct": false }
+      ],
+      "feedbackCorrect": "✅ Rätt: Hjälp medlemmen hitta rätt ställe istället för att skälla.",
+      "feedbackWrong": "❌ Fel: Att skälla på någon som nybörjare gör miljön otrevlig."
+    },
+    {
+      "question": "En medlem råkar skriva något olämpligt men ber om ursäkt direkt. Du ger dem ändå en timeout.",
+      "options": [
+        { "text": "Rätt", "correct": false },
+        { "text": "Fel", "correct": true }
+      ],
+      "feedbackCorrect": "✅ Rätt: Om medlemmen förstår och ber om ursäkt kan en varning räcka.",
+      "feedbackWrong": "❌ Fel: En timeout är för hårt om medlemmen direkt rättar sig."
     }
   ],
   "avancerad": [
@@ -40,7 +62,8 @@
         { "text": "Rätt", "correct": true },
         { "text": "Fel", "correct": false }
       ],
-      "feedback": "Helt rätt – teamwork är viktigt, aldrig skäm ut kollegor."
+      "feedbackCorrect": "✅ Rätt: Teamwork är viktigt, man ska aldrig skämma ut kollegor offentligt.",
+      "feedbackWrong": "❌ Fel: Att hänga ut en kollega skadar teamets samarbete."
     },
     {
       "question": "En medlem frågar samma sak flera gånger eftersom de inte förstår. Du blir irriterad och ignorerar dem.",
@@ -48,15 +71,17 @@
         { "text": "Rätt", "correct": false },
         { "text": "Fel", "correct": true }
       ],
-      "feedback": "Det är bättre att hjälpa eller guida till rätt kanal."
+      "feedbackCorrect": "✅ Rätt: Det är bättre att guida dem eller länka till rätt kanal/resurs.",
+      "feedbackWrong": "❌ Fel: Att ignorera någon gör att de känner sig dumma och ovälkomna."
     },
     {
-      "question": "Du är osäker på om ett brott mot reglerna ska leda till ban. Du frågar de andra i staff-chatten först.",
+      "question": "Du är osäker på om ett regelbrott ska leda till ban. Du frågar de andra i staff-chatten först.",
       "options": [
         { "text": "Rätt", "correct": true },
         { "text": "Fel", "correct": false }
       ],
-      "feedback": "Bra – fråga hellre än att göra ett stort misstag själv."
+      "feedbackCorrect": "✅ Rätt: Fråga hellre än att riskera ett stort misstag ensam.",
+      "feedbackWrong": "❌ Fel: Att agera ensam utan säkerhet kan leda till onödiga bans."
     },
     {
       "question": "Du är uttråkad och mutar några medlemmar för skoj.",
@@ -64,7 +89,8 @@
         { "text": "Rätt", "correct": false },
         { "text": "Fel", "correct": true }
       ],
-      "feedback": "Fel! Maktmissbruk förstör förtroendet för adminrollen."
+      "feedbackCorrect": "✅ Rätt: Admin-makt ska aldrig missbrukas för skoj.",
+      "feedbackWrong": "❌ Fel: Att muta folk för skoj skadar ditt förtroende som admin."
     },
     {
       "question": "En medlem skriver kränkande saker mot någon annan. Du stoppar det snabbt och ger en varning eller timeout.",
@@ -72,7 +98,35 @@
         { "text": "Rätt", "correct": true },
         { "text": "Fel", "correct": false }
       ],
-      "feedback": "Precis så – skydda medlemmarna och agera snabbt."
+      "feedbackCorrect": "✅ Rätt: Agera direkt för att skydda medlemmarna.",
+      "feedbackWrong": "❌ Fel: Att låta kränkningar fortsätta skadar hela communityt."
+    },
+    {
+      "question": "Du är admin men blir själv inblandad i en konflikt. Du löser det genom att be en annan admin ta över situationen.",
+      "options": [
+        { "text": "Rätt", "correct": true },
+        { "text": "Fel", "correct": false }
+      ],
+      "feedbackCorrect": "✅ Rätt: Om du är partisk är det bäst att lämna över till någon annan.",
+      "feedbackWrong": "❌ Fel: Att själv moderera när du är inblandad blir orättvist."
+    },
+    {
+      "question": "Serverägaren har en regel som du inte gillar. Du ignorerar den när du modererar.",
+      "options": [
+        { "text": "Rätt", "correct": false },
+        { "text": "Fel", "correct": true }
+      ],
+      "feedbackCorrect": "✅ Rätt: Som admin ska du följa serverns regler, inte dina egna.",
+      "feedbackWrong": "❌ Fel: Att ignorera regler sänker förtroendet för dig som admin."
+    },
+    {
+      "question": "En medlem rapporterar en allvarlig händelse via DM till dig. Du dokumenterar den och tar upp det i staff-chatten.",
+      "options": [
+        { "text": "Rätt", "correct": true },
+        { "text": "Fel", "correct": false }
+      ],
+      "feedbackCorrect": "✅ Rätt: Viktiga ärenden ska alltid dokumenteras och tas upp i teamet.",
+      "feedbackWrong": "❌ Fel: Om du ignorerar rapporter skadar du medlemmarnas förtroende."
     }
   ]
 }
