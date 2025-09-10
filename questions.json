@@ -1,0 +1,78 @@
+{
+  "grund": [
+    {
+      "question": "En medlem spammar emojis i chatten. Du säger: 'Snälla sluta spamma, annars får du en timeout.'",
+      "options": [
+        { "text": "Rätt", "correct": true },
+        { "text": "Fel", "correct": false }
+      ],
+      "feedback": "Bra! Alltid börja med en lugn varning."
+    },
+    {
+      "question": "Du bannar en medlem direkt för att du blev personligt arg.",
+      "options": [
+        { "text": "Rätt", "correct": false },
+        { "text": "Fel", "correct": true }
+      ],
+      "feedback": "Man ska aldrig banna p.g.a. känslor. Följ rutinerna."
+    },
+    {
+      "question": "Två medlemmar bråkar. Du hoppar in och börjar argumentera på ena sidan.",
+      "options": [
+        { "text": "Rätt", "correct": false },
+        { "text": "Fel", "correct": true }
+      ],
+      "feedback": "Som admin ska du medla, inte ta parti."
+    },
+    {
+      "question": "En ny medlem postar reklam. Du tar bort länken och hänvisar till reglerna.",
+      "options": [
+        { "text": "Rätt", "correct": true },
+        { "text": "Fel", "correct": false }
+      ],
+      "feedback": "Korrekt! Alltid förklara varför något tas bort."
+    }
+  ],
+  "avancerad": [
+    {
+      "question": "En annan admin råkar kicka fel person. Du påpekar det vänligt i staff-chatten istället för att hänga ut dem.",
+      "options": [
+        { "text": "Rätt", "correct": true },
+        { "text": "Fel", "correct": false }
+      ],
+      "feedback": "Helt rätt – teamwork är viktigt, aldrig skäm ut kollegor."
+    },
+    {
+      "question": "En medlem frågar samma sak flera gånger eftersom de inte förstår. Du blir irriterad och ignorerar dem.",
+      "options": [
+        { "text": "Rätt", "correct": false },
+        { "text": "Fel", "correct": true }
+      ],
+      "feedback": "Det är bättre att hjälpa eller guida till rätt kanal."
+    },
+    {
+      "question": "Du är osäker på om ett brott mot reglerna ska leda till ban. Du frågar de andra i staff-chatten först.",
+      "options": [
+        { "text": "Rätt", "correct": true },
+        { "text": "Fel", "correct": false }
+      ],
+      "feedback": "Bra – fråga hellre än att göra ett stort misstag själv."
+    },
+    {
+      "question": "Du är uttråkad och mutar några medlemmar för skoj.",
+      "options": [
+        { "text": "Rätt", "correct": false },
+        { "text": "Fel", "correct": true }
+      ],
+      "feedback": "Fel! Maktmissbruk förstör förtroendet för adminrollen."
+    },
+    {
+      "question": "En medlem skriver kränkande saker mot någon annan. Du stoppar det snabbt och ger en varning eller timeout.",
+      "options": [
+        { "text": "Rätt", "correct": true },
+        { "text": "Fel", "correct": false }
+      ],
+      "feedback": "Precis så – skydda medlemmarna och agera snabbt."
+    }
+  ]
+}
