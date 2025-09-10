@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ditt resultat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container center">
+    <h1>Resultat</h1>
+    <p id="score"></p>
+    <p id="percent"></p>
+    <a href="index.html" class="btn">Tillbaka till start</a>
+  </div>
+  <script>
+    const score = parseInt(localStorage.getItem("score")) || 0;
+    const total = parseInt(localStorage.getItem("total")) || 0;
+    const percent = total > 0 ? Math.round((score / total) * 100) : 0;
+
+    document.getElementById("score").innerText = `Du fick ${score} av ${total} rätt.`;
+    document.getElementById("percent").innerText = `Det motsvarar ${percent}% korrekt.`;
+  </script>
+</body>
+</html>
