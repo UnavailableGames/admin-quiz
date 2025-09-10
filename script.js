@@ -30,7 +30,9 @@ function showQuestion() {
     const button = document.createElement("button");
     button.innerText = opt.text;
     button.classList.add("option");
-    button.addEventListener("click", () => selectAnswer(button, opt.correct, q.feedback));
+    button.addEventListener("click", () =>
+      selectAnswer(button, opt.correct, q.feedbackCorrect, q.feedbackWrong)
+    );
     optionsDiv.appendChild(button);
   });
 
@@ -38,17 +40,17 @@ function showQuestion() {
   document.getElementById("next-btn").disabled = true;
 }
 
-function selectAnswer(button, correct, feedback) {
+function selectAnswer(button, correct, feedbackCorrect, feedbackWrong) {
   const options = document.querySelectorAll(".option");
-  options.forEach(b => b.disabled = true);
+  options.forEach(b => (b.disabled = true));
 
   if (correct) {
     button.classList.add("correct");
     score++;
-    document.getElementById("feedback").innerText = "✅ " + feedback;
+    document.getElementById("feedback").innerText = feedbackCorrect;
   } else {
     button.classList.add("wrong");
-    document.getElementById("feedback").innerText = "❌ " + feedback;
+    document.getElementById("feedback").innerText = feedbackWrong;
   }
 
   document.getElementById("next-btn").disabled = false;
@@ -65,7 +67,10 @@ document.getElementById("end-btn").addEventListener("click", () => {
 
 function endQuiz() {
   localStorage.setItem("score", score);
-  localStorage.setItem("total", currentQuestionIndex > 0 ? currentQuestionIndex : questions.length);
+  localStorage.setItem(
+    "total",
+    currentQuestionIndex > 0 ? currentQuestionIndex : questions.length
+  );
   window.location.href = "results.html";
 }
 
